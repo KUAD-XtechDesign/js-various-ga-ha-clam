@@ -1,6 +1,6 @@
 
 html,body,#contents,.wrapper,#back{
-  background-color: #001219;
+  background: linear-gradient(to bottom, #232730, #082d69);
   height: 100%;
   width: 100%;
   position: relative;
@@ -21,7 +21,7 @@ img{
 header{
   position: fixed;
   width: 100%;
-  background-color: #fff;
+  background-color: rgba(243, 143, 13, 0.274);
   padding: 20px;
   display: flex;
   align-items: center;
@@ -57,49 +57,20 @@ header ul li{
 }
 
 #back{
-  background-image: url(../images/spaceback.png);
+  background: linear-gradient(-45deg, rgba(246, 255, 0, 0.34), rgba(255, 0, 161, 0.64)) fixed, url(../images/ringbackgazou.png);
   background-size: cover;
-  background-position: center 100px;
-  top: 0;
-  top:90%;
-  transition: 2s all;
-}
-
-#back.anime{
-  top: 0%;
-}
-
-#person{
-  position: absolute;
-  top:200px;
-  right: -100px;
-  width: 100px;
-  transition: 0.6s all;
-}
-
-#person.anime{
-  right: 10px;
+  background-position: cover;
+  top: cover;
+  transition: cover;
 }
 
 
-#car{
-  position: absolute;
-  bottom:100px;
-  max-width: 40%;
-  left: -250px;
-  width: 250px;
-  transition: 0.6s all;
-}
-
-#car.anime{
-  left: 0px;
-}
 
 #food{
-  width: 50%;
-  bottom: 10%;
-  margin-left: -25%;
-  left: 50%;
+  width: cover;
+  bottom: 4%;
+  margin-left: cover;
+  left: cover;
   position: absolute;
   opacity: 0;
 }
@@ -107,8 +78,8 @@ header ul li{
 
 #food.anime {
   /* cssライブラリanimate.cssを利用 */
-  animation: zoomInDown;
-  animation-duration: 1s; 
+  animation: zoomInUp;
+  animation-duration: 0.3s; 
   opacity: 1;
 }
 
@@ -122,8 +93,71 @@ header ul li{
   height: 100%;
   color: #fff;
   font-family: serif;
-  font-size: 20px;
+  font-size: 40px;
   align-items: center;
   justify-content: center;
   top: 0;
 }
+
+.videowrap{
+  position: absolute; 
+  right: 0; 
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto; 
+  background-size: cover;
+}
+video {
+  display: block;
+  margin: auto;
+  size: cover;
+}
+
+p {
+  font-family: serif;
+  color: #fff;
+  bottom: 72%;
+  left: 2%;
+  font-size: 400%;
+  position: absolute;
+
+}
+
+#OBJ{
+  width: fit-content;
+  position: absolute;
+  margin-left: 21%;
+  bottom: -47.3%;
+  left: 5.5%;
+  z-index: 10;
+
+}
+
+.txt_img{
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 80vh;
+}
+
+.content{
+  display: none;
+  padding: 30px;
+
+}
+
+h1{
+  font-family: serif;
+  color: black;
+}
+
+h3{
+  font-family: serif;
+  color: #fff;
+  left: 30%;
+  bottom: 15%;
+  font-size: 400%;
+  position: absolute;
+}
+

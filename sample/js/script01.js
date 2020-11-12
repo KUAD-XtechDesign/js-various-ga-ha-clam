@@ -12,7 +12,7 @@ $(function(){
     setTimeout(backAnime,300);//0.3秒後backAnime実行
     setTimeout(personAnime,2000);//2秒後personAnime実行
     setTimeout(carAnime,2000);//2秒後carAnime実行
-    setTimeout(foodAnime,3000);//3秒後foodAnime実行
+    setTimeout(foodAnime,700);//3秒後foodAnime実行
   }
   
   //以下のアニメはCSSでやってみる
@@ -32,5 +32,11 @@ $(function(){
   function foodAnime(){
     $("#food").addClass("anime")
   }
+  
+  $("#OBJ").on("click",function(){
+    let target = $(this).siblings(".content");
+    target.slideDown("slow");
+  })
+  
 
 })
